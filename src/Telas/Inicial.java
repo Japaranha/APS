@@ -52,7 +52,7 @@ public class Inicial extends javax.swing.JFrame {
                 {null, null, null, null, null}
             },
             new String [] {
-                "Nomes", "Latitude", "Longitude", "Região", "Pais"
+                "Nomes", "Latitude", "Longitude", "Região", "País"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
