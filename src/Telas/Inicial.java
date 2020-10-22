@@ -42,7 +42,7 @@ public class Inicial extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lbl_col_Pais.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        lbl_col_Pais.setText("Georgazação");
+        lbl_col_Pais.setText("Georganização");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -70,7 +70,7 @@ public class Inicial extends javax.swing.JFrame {
                         .addGap(19, 19, 19)
                         .addComponent(jLabel1)
                         .addGap(18, 18, 18)
-                        .addComponent(lbl_col_Pais, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lbl_col_Pais, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
