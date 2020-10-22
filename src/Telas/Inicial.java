@@ -28,11 +28,10 @@ public class Inicial extends javax.swing.JFrame {
     private void initComponents() {
 
         pnl_Tabela = new javax.swing.JPanel();
-        lbl_col_Nome = new javax.swing.JLabel();
-        lbl_col_Latitude = new javax.swing.JLabel();
-        lbl_col_Longitude = new javax.swing.JLabel();
-        lbl_col_Regiao = new javax.swing.JLabel();
         lbl_col_Pais = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
         pnl_Botao = new javax.swing.JPanel();
         btn_busca_nome = new javax.swing.JButton();
         btn_busca_latitude = new javax.swing.JButton();
@@ -42,44 +41,50 @@ public class Inicial extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lbl_col_Nome.setText("Nomes");
+        lbl_col_Pais.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        lbl_col_Pais.setText("Georgazação");
 
-        lbl_col_Latitude.setText("Latitude");
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Nomes", "Latitude", "Longitude", "Região", "Pais"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
 
-        lbl_col_Longitude.setText("Longitude");
-
-        lbl_col_Regiao.setText("Região");
-
-        lbl_col_Pais.setText("País");
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\kazuo\\Documents\\NetBeansProjects\\Aps_2020\\src\\Resource\\map (2).png")); // NOI18N
 
         javax.swing.GroupLayout pnl_TabelaLayout = new javax.swing.GroupLayout(pnl_Tabela);
         pnl_Tabela.setLayout(pnl_TabelaLayout);
         pnl_TabelaLayout.setHorizontalGroup(
             pnl_TabelaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_TabelaLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(lbl_col_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(lbl_col_Latitude)
-                .addGap(123, 123, 123)
-                .addComponent(lbl_col_Longitude)
-                .addGap(114, 114, 114)
-                .addComponent(lbl_col_Regiao)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lbl_col_Pais, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34))
+                .addGap(26, 26, 26)
+                .addGroup(pnl_TabelaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnl_TabelaLayout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(jLabel1)
+                        .addGap(18, 18, 18)
+                        .addComponent(lbl_col_Pais, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl_TabelaLayout.setVerticalGroup(
             pnl_TabelaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_TabelaLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnl_TabelaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbl_col_Nome)
-                    .addComponent(lbl_col_Longitude)
-                    .addComponent(lbl_col_Regiao)
-                    .addComponent(lbl_col_Pais)
-                    .addComponent(lbl_col_Latitude, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(369, Short.MAX_VALUE))
+                .addGroup(pnl_TabelaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addGroup(pnl_TabelaLayout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(lbl_col_Pais, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(35, Short.MAX_VALUE))
         );
 
         btn_busca_nome.setText("Nome");
@@ -188,11 +193,10 @@ public class Inicial extends javax.swing.JFrame {
     private javax.swing.JButton btn_busca_nome;
     private javax.swing.JButton btn_busca_pais;
     private javax.swing.JButton btn_busca_regiao;
-    private javax.swing.JLabel lbl_col_Latitude;
-    private javax.swing.JLabel lbl_col_Longitude;
-    private javax.swing.JLabel lbl_col_Nome;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JLabel lbl_col_Pais;
-    private javax.swing.JLabel lbl_col_Regiao;
     private javax.swing.JPanel pnl_Botao;
     private javax.swing.JPanel pnl_Tabela;
     // End of variables declaration//GEN-END:variables
