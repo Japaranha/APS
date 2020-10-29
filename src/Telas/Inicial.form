@@ -165,15 +165,17 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Component id="btn_busca_nome" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                   <Component id="btn_busca_latitude" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                   <Component id="btn_busca_longitude" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                   <Component id="btn_busca_regiao" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="79" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
                   <Component id="btn_busca_pais" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="btn_sair" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="52" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -187,6 +189,7 @@
                       <Component id="btn_busca_longitude" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btn_busca_regiao" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btn_busca_pais" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btn_sair" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="43" max="32767" attributes="0"/>
               </Group>
@@ -217,6 +220,11 @@
         <Component class="javax.swing.JButton" name="btn_busca_pais">
           <Properties>
             <Property name="text" type="java.lang.String" value="Pa&#xed;s"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btn_sair">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sair"/>
           </Properties>
         </Component>
       </SubComponents>

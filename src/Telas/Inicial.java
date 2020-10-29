@@ -5,6 +5,12 @@
  */
 package Telas;
 
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import javax.swing.JFrame;
+import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
+
 /**
  *
  * @author SHEILA
@@ -17,6 +23,22 @@ public class Inicial extends javax.swing.JFrame {
     public Inicial() {
         initComponents();
     }
+    /*
+        public ExemploJFrame() {
+        Toolkit tk = Toolkit.getDefaultToolkit();
+        Dimension d = tk.getScreenSize();
+        setSize(d);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        ExemploJFrame tela = new ExemploJFrame();
+        tela.getContentPane().setBackground(Color.green);
+        tela.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+
+    }
+    */
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -38,6 +60,7 @@ public class Inicial extends javax.swing.JFrame {
         btn_busca_longitude = new javax.swing.JButton();
         btn_busca_regiao = new javax.swing.JButton();
         btn_busca_pais = new javax.swing.JButton();
+        btn_sair = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -97,6 +120,8 @@ public class Inicial extends javax.swing.JFrame {
 
         btn_busca_pais.setText("País");
 
+        btn_sair.setText("Sair");
+
         javax.swing.GroupLayout pnl_BotaoLayout = new javax.swing.GroupLayout(pnl_Botao);
         pnl_Botao.setLayout(pnl_BotaoLayout);
         pnl_BotaoLayout.setHorizontalGroup(
@@ -104,15 +129,17 @@ public class Inicial extends javax.swing.JFrame {
             .addGroup(pnl_BotaoLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(btn_busca_nome)
-                .addGap(80, 80, 80)
+                .addGap(49, 49, 49)
                 .addComponent(btn_busca_latitude)
-                .addGap(88, 88, 88)
+                .addGap(62, 62, 62)
                 .addComponent(btn_busca_longitude)
-                .addGap(87, 87, 87)
+                .addGap(62, 62, 62)
                 .addComponent(btn_busca_regiao)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
+                .addGap(67, 67, 67)
                 .addComponent(btn_busca_pais)
-                .addGap(70, 70, 70))
+                .addGap(35, 35, 35)
+                .addComponent(btn_sair)
+                .addContainerGap(52, Short.MAX_VALUE))
         );
         pnl_BotaoLayout.setVerticalGroup(
             pnl_BotaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,7 +150,8 @@ public class Inicial extends javax.swing.JFrame {
                     .addComponent(btn_busca_latitude)
                     .addComponent(btn_busca_longitude)
                     .addComponent(btn_busca_regiao)
-                    .addComponent(btn_busca_pais))
+                    .addComponent(btn_busca_pais)
+                    .addComponent(btn_sair))
                 .addContainerGap(43, Short.MAX_VALUE))
         );
 
@@ -193,6 +221,7 @@ public class Inicial extends javax.swing.JFrame {
     private javax.swing.JButton btn_busca_nome;
     private javax.swing.JButton btn_busca_pais;
     private javax.swing.JButton btn_busca_regiao;
+    private javax.swing.JButton btn_sair;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
